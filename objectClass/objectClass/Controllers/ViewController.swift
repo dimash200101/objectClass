@@ -26,6 +26,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         setup()
     }
     
+
+    
     @objc func repFunc() {
         resultLabel.text = resString
         valueLabel.text = valString

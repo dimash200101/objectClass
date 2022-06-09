@@ -23,8 +23,11 @@ class SecondViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
     }
+   
     
+
     @objc func repFunc() {
         resultLabel.text = resString
         valueLabel.text = valString

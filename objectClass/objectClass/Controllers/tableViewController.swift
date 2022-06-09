@@ -14,8 +14,12 @@ class tableViewController: UIViewController{
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var tf1: UITextField!
     @IBOutlet weak var bt1: UIButton!
-    @IBAction func push(_ sender: Any) {
-        roomName = tf1.text
-    }
     
+    
+    @IBAction func action(_ sender: Any) {
+        if let text = tf1.text{
+            roomsList2.append(text)
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
 }

@@ -17,6 +17,7 @@ class MyWordsViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         wordsTable.reloadData()
     }

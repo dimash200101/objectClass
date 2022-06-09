@@ -15,6 +15,8 @@ class SecondMyWordViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+    
+   
     override func viewDidAppear(_ animated: Bool) {
         words1Table.reloadData()
     }
@@ -27,6 +29,7 @@ class SecondMyWordViewController: UIViewController {
 }
 
 extension SecondMyWordViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return roomsList1.count
     }

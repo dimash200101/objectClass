@@ -20,7 +20,11 @@
 		B831B2A7284FA84D00369D2C /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831B2A6284FA84D00369D2C /* tableViewController.swift */; };
 		B831B2A9284FE66100369D2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831B2A8284FE66100369D2C /* SecondViewController.swift */; };
 		B831B2AB284FE7C700369D2C /* SecondMyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831B2AA284FE7C700369D2C /* SecondMyWordViewController.swift */; };
-		B831B2AF28508E1400369D2C /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831B2AE28508E1400369D2C /* CompareViewController.swift */; };
+		B8768ECF2850D5B3002A1BFA /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8768ECE2850D5B3002A1BFA /* CompareViewController.swift */; };
+		B8768ED12850D96D002A1BFA /* CompareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8768ED02850D96D002A1BFA /* CompareButton.swift */; };
+		B8768ED42850FB2D002A1BFA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8768ED22850FB2D002A1BFA /* Model.xcdatamodeld */; };
+		B8768ED62850FF10002A1BFA /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8768ED52850FF10002A1BFA /* tableViewCell.swift */; };
+		B8768ED828510DFA002A1BFA /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8768ED728510DFA002A1BFA /* LogViewController.swift */; };
 		B8D304F92823AA5000AC52ED /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8D304F82823AA5000AC52ED /* MobileNet.mlmodel */; };
 		FDB994D01DA5A4B346D868BE /* Pods_objectClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC85C6A97308AA954F10757 /* Pods_objectClass.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +47,11 @@
 		B831B2A6284FA84D00369D2C /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		B831B2A8284FE66100369D2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B831B2AA284FE7C700369D2C /* SecondMyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMyWordViewController.swift; sourceTree = "<group>"; };
-		B831B2AE28508E1400369D2C /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		B8768ECE2850D5B3002A1BFA /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		B8768ED02850D96D002A1BFA /* CompareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareButton.swift; sourceTree = "<group>"; };
+		B8768ED32850FB2D002A1BFA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B8768ED52850FF10002A1BFA /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		B8768ED728510DFA002A1BFA /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		B8D304F82823AA5000AC52ED /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../../MobileNet.mlmodel; sourceTree = "<group>"; };
 		CB477CA058E5F01B357AF4C3 /* Pods-objectClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objectClass.release.xcconfig"; path = "Pods/Target Support Files/Pods-objectClass/Pods-objectClass.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +108,10 @@
 				B831B2A6284FA84D00369D2C /* tableViewController.swift */,
 				B831B2A8284FE66100369D2C /* SecondViewController.swift */,
 				B831B2AA284FE7C700369D2C /* SecondMyWordViewController.swift */,
-				B831B2AE28508E1400369D2C /* CompareViewController.swift */,
+				B8768ECE2850D5B3002A1BFA /* CompareViewController.swift */,
+				B8768ED02850D96D002A1BFA /* CompareButton.swift */,
+				B8768ED52850FF10002A1BFA /* tableViewCell.swift */,
+				B8768ED728510DFA002A1BFA /* LogViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +148,7 @@
 				81FB175F2104FC65002BA27B /* Info.plist */,
 				81FB176521051214002BA27B /* SqueezeNet.mlmodel */,
 				B8D304F82823AA5000AC52ED /* MobileNet.mlmodel */,
+				B8768ED22850FB2D002A1BFA /* Model.xcdatamodeld */,
 			);
 			path = objectClass;
 			sourceTree = "<group>";
@@ -261,15 +273,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B831B2AF28508E1400369D2C /* CompareViewController.swift in Sources */,
+				B8768ECF2850D5B3002A1BFA /* CompareViewController.swift in Sources */,
 				81FB17562104FC64002BA27B /* ViewController.swift in Sources */,
 				81FB176621051214002BA27B /* SqueezeNet.mlmodel in Sources */,
+				B8768ED828510DFA002A1BFA /* LogViewController.swift in Sources */,
+				B8768ED42850FB2D002A1BFA /* Model.xcdatamodeld in Sources */,
 				B8D304F92823AA5000AC52ED /* MobileNet.mlmodel in Sources */,
 				81CAAB65211C6F9E00C17C41 /* StringExt.swift in Sources */,
 				B831B2A5284E4E6000369D2C /* RoomViewController.swift in Sources */,
 				81FB17542104FC64002BA27B /* AppDelegate.swift in Sources */,
+				B8768ED12850D96D002A1BFA /* CompareButton.swift in Sources */,
 				B831B2A7284FA84D00369D2C /* tableViewController.swift in Sources */,
 				8161DE7B211DBC7700CC6972 /* WordsListTableViewCell.swift in Sources */,
+				B8768ED62850FF10002A1BFA /* tableViewCell.swift in Sources */,
 				B831B2AB284FE7C700369D2C /* SecondMyWordViewController.swift in Sources */,
 				B831B2A9284FE66100369D2C /* SecondViewController.swift in Sources */,
 				81CAAB68211DB97F00C17C41 /* MyWordsViewController.swift in Sources */,
@@ -349,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -420,7 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U58S9XNB8J;
 				INFOPLIST_FILE = objectClass/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U58S9XNB8J;
 				INFOPLIST_FILE = objectClass/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +490,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8768ED22850FB2D002A1BFA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8768ED32850FB2D002A1BFA /* Model.xcdatamodel */,
+			);
+			currentVersion = B8768ED32850FB2D002A1BFA /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = "../../../Downloads/objectClass 2/objectClass/Model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 81FB17482104FC64002BA27B /* Project object */;
 }

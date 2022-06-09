@@ -11,6 +11,7 @@ import UIKit
 //var roomsList: [String:[String]] = [:]
 var roomsList: [String] = []
 var roomsList1: [String] = []
+var roomsList2: [String] = []
 
 
 
@@ -25,6 +26,8 @@ class RoomViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         roomsTable.reloadData()
@@ -47,18 +50,15 @@ class RoomViewController: UIViewController {
 
 extension RoomViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return roomsList.keys.count
-        return roomsList.count
+        //return roomsList2.keys.count
+        return roomsList2.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        //cell.textLabel?.text = Array(roomsList.keys)[indexPath.row]
-        cell.textLabel?.text = Array(roomsList)[indexPath.row]
+        //cell.textLabel?.text = Array(roomsList2.keys)[indexPath.row]
+        cell.textLabel?.text = Array(roomsList2)[indexPath.row]
         cell.textLabel?.numberOfLines = 0
         return cell
     }
